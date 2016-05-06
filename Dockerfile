@@ -1,10 +1,3 @@
-FROM node:0.10
+FROM centos:latest
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
-
-COPY . /usr/src/app
-
-CMD [ "npm", "start" ]
-
-EXPOSE 8080
+CMD=[/bin/bash]
